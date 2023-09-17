@@ -1,2 +1,3 @@
 # capstone
-# Business Undeerstanding
+# Business Understanding
+# Data Understanding
