@@ -1,4 +1,4 @@
-# capstone
+# README
 # Business Understanding
 # Data Understanding
 # Data Preparation
