@@ -47,6 +47,32 @@ The Heart Failure Prediction dataset is a collection of clinical and demographic
  - We will be using Gogle Colab. Please upload the `kaggle.json` file to a folder called kaggle your Gogle Drive. This will allow you to access the Kaggle API from your Colab notebooks.
 
 # Data Preparation
+#### __Display basic statistics__
+
+First, we will instantiate the `ExploreData` class and pass the cleaned dataset `cleaned_data` as a parameter to initialize the class. Next we will use the `examine_structure()` method to gather initial insights into the datasets structure, including basic statistics, data shape, datatypess and any missing values.
+![DataPreparation 1](https://github.com/dataeducator/capstone/assets/107881738/3f49a78a-326e-459b-9967-7ad42aabb514)
+
+![DataPreparation2](https://github.com/dataeducator/capstone/assets/107881738/bd11ce1a-75ff-4337-ad6a-b2bc304f10f4)
+
+Then we look at correlations
+![DataPreparation3](https://github.com/dataeducator/capstone/assets/107881738/81392697-1502-498f-9a30-1dfb0ed0f0e2)
+
+Then we create visualizations to look at patterns in the data.
+![DataPreparation4](https://github.com/dataeducator/capstone/assets/107881738/7ef8de9c-c292-46b7-87d8-ad909fcd26aa)
+![DataPreparation5](https://github.com/dataeducator/capstone/assets/107881738/9e9cab3f-1ada-4eba-9061-33dc0aa75e2c)
+#### __Preliminary Insights:__
+* Sex: __Male patients__ are more likely (approximately 61%) to have heart disease than female patients (approximately 26%).
+* ChestPainType: Patients with __ASY type of chest pain__ are more likely to have heart disease than patients with other types of chest pains. (ASY: Asymptomatic Chest Pain, sometimes described as silent due to a lack of intensity compared to a heart attack)
+* RestingECG- Patients with Resting electrocardiograms that show __ST-T wave abnormality (labeled ST)__ are more likely to have heart disease
+* ExerciseAngina: Patients with this feature __(ExerciseAngina) labeled `yes`__ are more likely to have heart disease
+* ST_slope: Patients with this feature __(ST_slope) labeled `Flat` or `Down`__ are more likely than patients with this feature labeled `Up`.
+* FastingBS: Patients with __fasting blood sugar > 120 mg/dL__ are more likely to have heart disease.
+* Age: Patients __over 50__ are more likely to have heart disease
+* RestingBP: difficult to quanitify with data (higher resting blood pressure >100 bpm slightly more likely to have heart disease)
+* Cholesterol: difficult to quantity with data
+* MaxHR: Patients with lower maximum heart rate are more likely to have heart disease ( values <100)
+* Oldpeak: Patients with higher old peak values are more likely to have heart disease (values > 1)
+  
 # Modeling
 # Evaluation
 # Deployment
