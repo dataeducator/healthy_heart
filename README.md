@@ -74,9 +74,47 @@ Then we create visualizations to look at patterns in the data.
 * Oldpeak: Patients with higher old peak values are more likely to have heart disease (values > 1)
   
 # Modeling
+
+In this section of code, we focus on leveraging the binary_classifier object to analyze heart disease data. The binary_classifier is a crucial component that facilitates the classification task. It encapsulates a set of models including Logistic Regression, Decision Trees, Random Forest, and XGBoost, each with its distinct approach to predicting heart disease. These models collectively form a versatile toolkit for classification tasks.
+
+The process begins with data preprocessing, where the DataFrame 'df' containing the heart disease dataset is prepared for analysis. This involves scaling the features and organizing the target variable, resulting in X_scaled and y_binary. Subsequently, the data is partitioned into training and testing sets using the train_test_split method. This ensures that the models are evaluated on independent data to assess their generalization capabilities.
+
+Next, the models are trained using the preprocessed data. For instance, the code demonstrates training a Logistic Regression model. The binary_classifier object provides a convenient interface for this task. Following training, key details about the model are printed using the print_model_information method. This step offers valuable insights into the chosen model's characteristics and parameters, aiding in the interpretation of results.
+
+
 # Evaluation
+![Modeling1](https://github.com/dataeducator/capstone/assets/107881738/809c6461-fe8b-4867-ae7c-32a7a0bb7ad2)
 # Deployment
+1. __Web Application Development:__ Work in progress
+  - Build a user-friendly web application that allows users to interact with your heart disease classification model. Consider using frameworks like Flask, Streamlit, or FastAPI for efficient development.
+
+2. Github Repo: minimum viable product
+# Recommendations
+1. __Use the Random Forest Model__: Given its performance across metrics including a recall > 0.85, consider prioritizing the Random Forest model for heart disease classification.
+
+2. __Feature Importance Insights__: Focus on `ExerciseAngina`, `ChestPainType`, `RestingBP` as they consistently appear as top model influencers across various models.
+
+3. __SHAP force plot Interpretation__: Leverage the SHAP for plot genrated for the random forest model. It provides valuable insights into how individual features impact the classification of a chosen istance. 
+
+4. __Consider Logistic Regression and Neural Network__: While the Random Forest Model is the most performative, Logistic Regression is known for being easier to understand and considering we will be using this in a clinical setting we should consider using models like Neural Networks that have been readily adopted in the medical community for similar tasks.
+
+# Future Work
+1. __Advanced Feature Engineering:__
+
+  - Explore more sophisticated feature engineering techniques like interaction terms, polynomial features, or dimensionality reduction methods like PCA. These can help extract more meaningful information from the data.
+
+2. Parallel Computing with XGBoost:
+
+  - Leverage parallel processing capabilities offered by XGBoost. Utilize multi-threading or distributed computing techniques to expedite model training, especially when dealing with large datasets.
+
+3. __User Feedback and Iterative Improvement:__
+    - Gather feedback from web application users to identify improvement areas. Use this feedback to refine the model and the application interface iteratively.
+
+4. __Optimization for GPU Usage:__
+  - Fine-tune models to make optimal use of the T4 GPU. Experiment with different settings and configurations to maximize GPU performance.
+
 # Repository Structure
+
 ***
 <pre>
    .
