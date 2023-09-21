@@ -1,4 +1,4 @@
-# Heart Disease Classification
+# Healthy Hearts backed by Zephyr
 ![national-cancer-institute-z8ofh6Zkn4k-unsplash](https://github.com/dataeducator/capstone/assets/107881738/2e13f05d-1344-41a1-9a9e-30175fa86572)
 
 # Business Understanding
