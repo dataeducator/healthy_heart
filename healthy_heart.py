@@ -6,40 +6,40 @@ Created on Wed Sep 20 21:57:26 2023
 """
 
 import pandas as pd
-import numpy as np
+#import numpy as np
 #import seaborn as sns
-import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
-import statsmodels.api as sm
-import sklearn
-from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.svm import SVC
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
-from sklearn.preprocessing import StandardScaler
-from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import GridSearchCV
-from sklearn.metrics import make_scorer, recall_score
-from sklearn.feature_selection import SelectKBest, chi2
-from sklearn.feature_selection import RFE
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-from tensorflow.keras import layers, models
-from tensorflow.keras.metrics import BinaryAccuracy, Recall
-from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
-import tensorflow as tf
+#import matplotlib.pyplot as plt
+#import matplotlib.ticker as ticker
+#import statsmodels.api as sm
+#import sklearn
+#from sklearn.linear_model import LogisticRegression
+#from sklearn.tree import DecisionTreeClassifier
+#from sklearn.ensemble import RandomForestClassifier
+#from sklearn.neighbors import KNeighborsClassifier
+#from sklearn.svm import SVC
+#from sklearn.model_selection import train_test_split
+#from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
+#from sklearn.preprocessing import StandardScaler
+#from sklearn.preprocessing import LabelEncoder
+#from sklearn.model_selection import GridSearchCV
+#from sklearn.metrics import make_scorer, recall_score
+#from sklearn.feature_selection import SelectKBest, chi2
+#from sklearn.feature_selection import RFE
+#from sklearn.preprocessing import MinMaxScaler
+#from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+#from tensorflow.keras import layers, models
+#from tensorflow.keras.metrics import BinaryAccuracy, Recall
+#from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
+#import tensorflow as tf
 import pickle
 import streamlit as st
-from sklearn.metrics import classification_report, accuracy_score, recall_score, precision_score, f1_score
-from keras.models import Sequential
-from keras.layers import Conv2D, SeparableConv2D, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization
-from keras.metrics import Precision, Accuracy, Recall
-from xgboost import XGBClassifier
-from BinaryClassifier import BinaryClassifier
-import tensorflow.keras.models as models
+#from sklearn.metrics import classification_report, accuracy_score, recall_score, precision_score, f1_score
+#from keras.models import Sequential
+#from keras.layers import Conv2D, SeparableConv2D, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization
+#from keras.metrics import Precision, Accuracy, Recall
+#from xgboost import XGBClassifier
+#from BinaryClassifier import BinaryClassifier
+#import tensorflow.keras.models as models
 
 
 # Used for working with the z-score
