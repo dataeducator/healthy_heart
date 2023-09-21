@@ -9,7 +9,7 @@ In the realm diagnostics, timely and accurate disease detection is crucial to im
 Zephyr Healthcare Solutions
 
 #### __Business Case:__  
-As a newly appointed lead of the data analytics team at Zephyr Healthcare Solutions,my team has been tasked with enhancing the company's diagnostic capabilities through advanced predictive modeling techniques.
+As a newly appointed lead of the data analytics team at Zephyr Healthcare Solutions,my team has been tasked with enhancing the company's diagnostic capabilities through advanced predictive modeling techniques for Heart Disease.
 
 # Data Understanding
 ### __Data Description:__
