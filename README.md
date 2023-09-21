@@ -81,8 +81,13 @@ The process begins with data preprocessing, where the DataFrame 'df' containing 
 
 Next, the models are trained using the preprocessed data. For instance, the code demonstrates training a Logistic Regression model. The binary_classifier object provides a convenient interface for this task. Following training, key details about the model are printed using the print_model_information method. This step offers valuable insights into the chosen model's characteristics and parameters, aiding in the interpretation of results.
 
+Our baseline Results were as follows:
 
-# Evaluation
+
+![Modeling1](https://github.com/dataeducator/healthy_heart/assets/107881738/06cfdead-7aea-490e-89f8-554da2008f60)
+
+
+Our final model had the following results based on recall: 
 | Model                 | Recall   |
 |-----------------------|----------|
 | Logistic Regression   | 0.862    |
@@ -92,6 +97,9 @@ Next, the models are trained using the preprocessed data. For instance, the code
 | Random Forest         | 0.871    |
 | XGBoost               | 0.857    |
 | Neural Network        | 0.869    |
+
+
+# Evaluation
 
 Given the feature importances provided for each model, we can infer which features are deemed important across different algorithms for classifying a patient as having heart disease. Considering that the Random Forest model as the most performative after parameter tuning, let's highlight the features that appear to be consistently influential across different models:
 
