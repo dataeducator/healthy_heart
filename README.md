@@ -122,5 +122,10 @@ Next, the models are trained using the preprocessed data. For instance, the code
       ├── README.md                                            Overview for project reviewers  
       ├── notebook.ipynb                                       Documentation of Full Analysis in Jupyter Notebook
       ├── presentation.pdf                                     PDF version of Full Analysis shown in a slide deck                                   
-      ├── setup.yaml                                            Includes instructions to obtain the dataset
+      ├── setup.yaml                                           Includes instructions to obtain the dataset
+      ├── requirements.txt                                     Includes requirements to deploy streamlit app
+      ├── X_train_scaled.sav                                   Includes model of scaled X_train for web app deployment
+      ├── random_forest_model.sav                              Includes model of random forest for web app deployment
+      ├── healthy_heart.py                                     Includes python code for streamlit web app
+      ├── banner.png                                           Banner image for deployed healthy_heart app
       └── .gitignore                                           Specifies intentionally untracked files
