@@ -1,5 +1,5 @@
 # Healthy Hearts backed by Zephyr
-![national-cancer-institute-z8ofh6Zkn4k-unsplash](https://github.com/dataeducator/capstone/assets/107881738/2e13f05d-1344-41a1-9a9e-30175fa86572)
+![healthy_heart](https://github.com/dataeducator/healthy_heart/assets/107881738/d2c08d7a-1947-4426-ba81-cd2abc7911dd)
 
 # Business Understanding
 #### __Problem Statement:__
