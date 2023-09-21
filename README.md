@@ -83,7 +83,18 @@ Next, the models are trained using the preprocessed data. For instance, the code
 
 
 # Evaluation
-![Modeling1](https://github.com/dataeducator/capstone/assets/107881738/809c6461-fe8b-4867-ae7c-32a7a0bb7ad2)
+| Model                 | Accuracy |
+|-----------------------|----------|
+| Logistic Regression   | 0.862    |
+| K-Nearest Neighbors   | 0.868    |
+| Support Vector Machine | 0.865    |
+| Decision Trees        | 0.811    |
+| Random Forest         | 0.871    |
+| XGBoost               | 0.857    |
+
+
+Given the feature importances provided for each model, we can infer which features are deemed important across different algorithms for classifying a patient as having heart disease. Considering that the Random Forest model as the most performative after parameter tuning, let's highlight the features that appear to be consistently influential across different models:
+
 # Deployment
 1. __Web Application Development:__ Work in progress click [here](https://healthy-heart.streamlit.app/)
   - Build a user-friendly web application that allows users to interact with your heart disease classification model. Consider using frameworks like Flask, Streamlit, or FastAPI for efficient development.
