@@ -85,7 +85,7 @@ Next, the models are trained using the preprocessed data. For instance, the code
 # Evaluation
 ![Modeling1](https://github.com/dataeducator/capstone/assets/107881738/809c6461-fe8b-4867-ae7c-32a7a0bb7ad2)
 # Deployment
-1. __Web Application Development:__ Work in progress
+1. __Web Application Development:__ Work in progress click [here](https://healthy-heart.streamlit.app/)
   - Build a user-friendly web application that allows users to interact with your heart disease classification model. Consider using frameworks like Flask, Streamlit, or FastAPI for efficient development.
 
 2. Github Repo: minimum viable product
