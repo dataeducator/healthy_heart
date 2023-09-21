@@ -72,7 +72,7 @@ st.set_page_config(
  )
 
 # Adding Image to web app
-st.image('data/banner.png', use_column_width=True, width=800)
+st.image('banner.png', use_column_width=True, width=800)
 
 # Create input fields for user input
 col1, col2, col3 = st.columns(3)
