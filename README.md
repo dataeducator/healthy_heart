@@ -1,4 +1,4 @@
-# Healthy Hearts backed by Zephyr
+# Predicting Heart Disease
 ![healthy_heart](https://github.com/dataeducator/healthy_heart/assets/107881738/d2c08d7a-1947-4426-ba81-cd2abc7911dd)
 
 # Business Understanding
