@@ -1,0 +1,56 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Sep 21 08:07:36 2023
+
+@author: Tenicka Norwood
+"""
+
+name: capstone-environment
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pandas=1.5.3
+  - numpy=1.23.5
+  - matplotlib
+  - seaborn=0.12.2
+  - scikit-learn
+  - jupyter
+  - notebook
+  - nb_conda_kernels
+  - tqdm
+  - requests
+  - beautifulsoup4
+  - lxml
+  - tensorflow=2.13.0
+
+# To obtain the data for the capstone project, follow these steps:
+
+# 1. Create or log in to your Kaggle account and access your account settings.
+# 2. Navigate to the API section on the account page.
+# 3. Create a new API token, which will download a file named kaggle.json.
+# 4. Upload the kaggle.json file to a folder called 'kaggle' in your Google Drive.
+# 5. In a Google Colab notebook, use the following code to mount your Google Drive:
+
+# from google.colab import drive
+# drive.mount('/content/drive')
+
+# 6. Create a directory named '.kaggle' in the root directory:
+
+# !mkdir /root/.kaggle
+
+# 7. Copy the 'kaggle.json' file from your Google Drive to the '.kaggle' directory:
+
+# !cp /content/drive/MyDrive/kaggle/kaggle.json /root/.kaggle/kaggle.json
+
+# 8. Set permissions to protect your API key:
+
+# !chmod 600 /root/.kaggle/kaggle.json
+
+# 9. Finally, download the dataset 'heart-failure-prediction' using the Kaggle API:
+
+# !kaggle datasets download -d fedesoriano/heart-failure-prediction
+
+# 10. Unzip the downloaded dataset and place it in the specified location in Google Drive:
+
+# !unzip heart-failure-prediction.zip -d /content/drive/MyDrive/kaggle/heart-failure-prediction
