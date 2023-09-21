@@ -83,7 +83,7 @@ Next, the models are trained using the preprocessed data. For instance, the code
 
 
 # Evaluation
-| Model                 | Accuracy |
+| Model                 | Recall   |
 |-----------------------|----------|
 | Logistic Regression   | 0.862    |
 | K-Nearest Neighbors   | 0.868    |
@@ -91,7 +91,7 @@ Next, the models are trained using the preprocessed data. For instance, the code
 | Decision Trees        | 0.811    |
 | Random Forest         | 0.871    |
 | XGBoost               | 0.857    |
-
+| Neural Network        | 0.869    |
 
 Given the feature importances provided for each model, we can infer which features are deemed important across different algorithms for classifying a patient as having heart disease. Considering that the Random Forest model as the most performative after parameter tuning, let's highlight the features that appear to be consistently influential across different models:
 
