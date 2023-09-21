@@ -3,7 +3,7 @@
 
 # Business Understanding
 #### __Problem Statement:__
-In the realm diagnostics, timely and accurate disease detection is crucial to improving patient health outcomes. Zephyr Healthcare recognizes the potential of machine learning techniques in achieving this goal. The challenge lies in developing a robust predictive model that harnesses the power of machine learning algorithms including random forests to predict Heart Disease with a focus on achieving high recall rates.
+In the realm diagnostics, timely and accurate disease detection is crucial to improving patient health outcomes. Zephyr Healthcare recognizes the potential of machine learning techniques in achieving this goal. The challenge lies in developing a robust predictive model that harnesses the power of machine learning algorithms including random forests to predict heart disease with a focus on achieving high recall rates.
 
 #### __Stakeholder:__
 Zephyr Healthcare Solutions
