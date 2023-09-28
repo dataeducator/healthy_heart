@@ -3,17 +3,17 @@
 
 # Business Understanding
 #### __Problem Statement:__
-In the realm diagnostics, timely and accurate disease detection is crucial to improving patient health outcomes. Zephyr Healthcare recognizes the potential of machine learning techniques in achieving this goal. The challenge lies in developing a robust predictive model that harnesses the power of machine learning algorithms including random forests to predict heart disease with a focus on achieving high recall rates.
+In the realm of diagnostics, timely and accurate disease detection is crucial to improving patient health outcomes. Zephyr Healthcare recognizes the potential of machine learning techniques in achieving this goal. The challenge lies in developing a robust predictive model that harnesses the power of machine learning algorithms, including random forests, to predict heart disease, focusing on achieving high recall rates.
 
 #### __Stakeholder:__
 Zephyr Healthcare Solutions
 
 #### __Business Case:__  
-As a newly appointed lead of the data analytics team at Zephyr Healthcare Solutions,my team has been tasked with enhancing the company's diagnostic capabilities through advanced predictive modeling techniques for Heart Disease.
+As a newly appointed head of the data analytics team at Zephyr Healthcare Solutions, my team has been tasked with enhancing the company's diagnostic capabilities through advanced predictive modeling techniques for Heart Disease.
 
 # Data Understanding
 ### __Data Description:__
-The Heart Failure Prediction dataset is a collection of clinical and demographic features that was created by combining five heart datasets aimed at predicting the likelihood of heart failure.
+The Heart Failure Prediction dataset is a collection of clinical and demographic features created by combining five heart datasets to predict the likelihood of heart failure.
 #### Features
 | Feature           | Description                                                         |
 |-------------------|---------------------------------------------------------------------|
@@ -44,12 +44,12 @@ The Heart Failure Prediction dataset is a collection of clinical and demographic
 4. __Create New API Token:__
   - Click on the __`Create New API Token`__ button. This will trigger the download of a file named `kaggle.json`.
 5. __Move API Token to Google Drive(We will be using Google Colab)__
- - We will be using Gogle Colab. Please upload the `kaggle.json` file to a folder called kaggle your Gogle Drive. This will allow you to access the Kaggle API from your Colab notebooks.
+ - We will be using Gogle Colab. Please upload the `kaggle.json` file to a folder called Kaggle in your Google Drive. This will allow you to access the Kaggle API from your Colab notebooks.
 
 # Data Preparation
 #### __Display basic statistics__
 
-First, we will instantiate the `ExploreData` class and pass the cleaned dataset `cleaned_data` as a parameter to initialize the class. Next we will use the `examine_structure()` method to gather initial insights into the datasets structure, including basic statistics, data shape, datatypess and any missing values.
+First, we will instantiate the `ExploreData` class and pass the cleaned dataset `cleaned_data` as a parameter to initialize the class. Next, we will use the `examine_structure()` method to gather initial insights into the dataset's structure, including basic statistics, data shape, datatypes, and missing values.
 ![DataPreparation 1](https://github.com/dataeducator/capstone/assets/107881738/3f49a78a-326e-459b-9967-7ad42aabb514)
 
 ![DataPreparation2](https://github.com/dataeducator/capstone/assets/107881738/bd11ce1a-75ff-4337-ad6a-b2bc304f10f4)
@@ -68,14 +68,14 @@ Then we create visualizations to look at patterns in the data.
 * ST_slope: Patients with this feature __(ST_slope) labeled `Flat` or `Down`__ are more likely than patients with this feature labeled `Up`.
 * FastingBS: Patients with __fasting blood sugar > 120 mg/dL__ are more likely to have heart disease.
 * Age: Patients __over 50__ are more likely to have heart disease
-* RestingBP: difficult to quanitify with data (higher resting blood pressure >100 bpm slightly more likely to have heart disease)
+* RestingBP: difficult to quantify with data (higher resting blood pressure >100 bpm slightly more likely to have heart disease)
 * Cholesterol: difficult to quantity with data
 * MaxHR: Patients with lower maximum heart rate are more likely to have heart disease ( values <100)
 * Oldpeak: Patients with higher old peak values are more likely to have heart disease (values > 1)
   
 # Modeling
 
-In this section of code, we focus on leveraging the binary_classifier object to analyze heart disease data. The binary_classifier is a crucial component that facilitates the classification task. It encapsulates a set of models including Logistic Regression, Decision Trees, Random Forest, and XGBoost, each with its distinct approach to predicting heart disease. These models collectively form a versatile toolkit for classification tasks.
+This code section focuses on leveraging the binary_classifier object to analyze heart disease data. The binary_classifier is a crucial component that facilitates the classification task. It encapsulates a set of models, including Logistic Regression, Decision Trees, Random Forest, and XGBoost, each with its distinct approach to predicting heart disease. These models collectively form a versatile toolkit for classification tasks.
 
 The process begins with data preprocessing, where the DataFrame 'df' containing the heart disease dataset is prepared for analysis. This involves scaling the features and organizing the target variable, resulting in X_scaled and y_binary. Subsequently, the data is partitioned into training and testing sets using the train_test_split method. This ensures that the models are evaluated on independent data to assess their generalization capabilities.
 
@@ -101,7 +101,7 @@ Our final model had the following results based on recall:
 
 # Evaluation
 
-Given the feature importances provided for each model, we can infer which features are deemed important across different algorithms for classifying a patient as having heart disease. Considering that the Random Forest model as the most performative after parameter tuning, let's highlight the features that appear to be consistently influential across different models:
+Given the feature importance provided for each model, we can infer which features are deemed important across different algorithms for classifying a patient as having heart disease. Considering that the Random Forest model is the most performative after parameter tuning, let's highlight the features that appear to be consistently influential across different models:
 
 # Deployment
 1. __Web Application Development:__ Work in progress click [here](https://healthy-heart.streamlit.app/)
@@ -113,9 +113,9 @@ Given the feature importances provided for each model, we can infer which featur
 
 2. __Feature Importance Insights__: Focus on `ExerciseAngina`, `ChestPainType`, `RestingBP` as they consistently appear as top model influencers across various models.
 
-3. __SHAP force plot Interpretation__: Leverage the SHAP for plot genrated for the random forest model. It provides valuable insights into how individual features impact the classification of a chosen istance. 
+3. __SHAP force plot Interpretation__: Leverage the SHAP for the plot generated for the random forest model. It provides valuable insights into how individual features impact the classification of a chosen instance. 
 
-4. __Consider Logistic Regression and Neural Network__: While the Random Forest Model is the most performative, Logistic Regression is known for being easier to understand and considering we will be using this in a clinical setting we should consider using models like Neural Networks that have been readily adopted in the medical community for similar tasks.
+4. __Consider Logistic Regression and Neural Network__: While the Random Forest Model is the most performative, Logistic Regression is known for being easier to understand, and considering we will be using this in a clinical setting, we should consider using models like Neural Networks that have been readily adopted in the medical community for similar tasks.
 
 # Future Work
 1. __Advanced Feature Engineering:__
@@ -132,6 +132,10 @@ Given the feature importances provided for each model, we can infer which featur
 4. __Optimization for GPU Usage:__
   - Fine-tune models to make optimal use of the T4 GPU. Experiment with different settings and configurations to maximize GPU performance.
 
+
+Please review my full analysis in [my Jupyter notebook](https://github.com/dataeducator/healthy_heart/blob/main/notebook.ipynb ) or ([my presentation](https://github.com/dataeducator/healthy_heart/blob/main/presentation.pdf )).
+Feel free to contact me __Tenicka Norwood__ at tenicka.norwood@gmail.com if you have any more questions.
+
 # Repository Structure
 
 ***
@@ -142,9 +146,9 @@ Given the feature importances provided for each model, we can infer which featur
       ├── notebook.ipynb                                       Documentation of Full Analysis in Jupyter Notebook
       ├── presentation.pdf                                     PDF version of Full Analysis shown in a slide deck                                   
       ├── setup.yaml                                           Includes instructions to obtain the dataset
-      ├── requirements.txt                                     Includes requirements to deploy streamlit app
-      ├── X_train_scaled.sav                                   Includes model of scaled X_train for web app deployment
-      ├── random_forest_model.sav                              Includes model of random forest for web app deployment
-      ├── healthy_heart.py                                     Includes python code for streamlit web app
+      ├── requirements.txt                                     Includes requirements to deploy the Streamlit app
+      ├── X_train_scaled.sav                                   Includes a model of scaled X_train for web app deployment
+      ├── random_forest_model.sav                              Includes a model of random forest for web app deployment
+      ├── healthy_heart.py                                     Includes Python code for the Streamlit web app
       ├── banner.png                                           Banner image for deployed healthy_heart app
       └── .gitignore                                           Specifies intentionally untracked files
