@@ -133,7 +133,7 @@ Given the feature importance provided for each model, we can infer which feature
   - Fine-tune models to make optimal use of the T4 GPU. Experiment with different settings and configurations to maximize GPU performance.
 
 
-Please review my full analysis in [my Jupyter notebook](https://github.com/dataeducator/healthy_heart/blob/main/notebook.ipynb ) or ([my presentation](https://github.com/dataeducator/healthy_heart/blob/main/presentation%20.pdf )).
+Please review my full analysis in [my Jupyter notebook](https://github.com/dataeducator/healthy_heart/blob/main/notebook.ipynb ) or ([my presentation](https://github.com/dataeducator/healthy_heart/blob/main/presentation.pdf )).
 Feel free to contact me __Tenicka Norwood__ at tenicka.norwood@gmail.com if you have more questions.
 
 # Repository Structure
