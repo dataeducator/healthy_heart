@@ -109,9 +109,9 @@ Given the feature importance provided for each model, we can infer which feature
 
 2. Github Repo: minimum viable product
 # Recommendations
-1. __Use the Random Forest Model__: Given its performance across metrics including a recall > 0.85, consider prioritizing the Random Forest model for heart disease classification.
+1. __Use the Random Forest Model__: Given its performance across metrics, including a recall > 0.85, consider prioritizing the Random Forest model for heart disease classification.
 
-2. __Feature Importance Insights__: Focus on `ExerciseAngina`, `ChestPainType`, `RestingBP` as they consistently appear as top model influencers across various models.
+2. __Feature Importance Insights__: Focus on `ExerciseAngina`, `ChestPainType`, and `RestingBP` as they consistently appear as top model influencers across various models.
 
 3. __SHAP force plot Interpretation__: Leverage the SHAP for the plot generated for the random forest model. It provides valuable insights into how individual features impact the classification of a chosen instance. 
 
@@ -133,8 +133,8 @@ Given the feature importance provided for each model, we can infer which feature
   - Fine-tune models to make optimal use of the T4 GPU. Experiment with different settings and configurations to maximize GPU performance.
 
 
-Please review my full analysis in [my Jupyter notebook](https://github.com/dataeducator/healthy_heart/blob/main/notebook.ipynb ) or ([my presentation](https://github.com/dataeducator/healthy_heart/blob/main/presentation.pdf )).
-Feel free to contact me __Tenicka Norwood__ at tenicka.norwood@gmail.com if you have any more questions.
+Please review my full analysis in [my Jupyter notebook](https://github.com/dataeducator/healthy_heart/blob/main/notebook.ipynb ) or ([my presentation](https://github.com/dataeducator/healthy_heart/blob/main/presentation .pdf )).
+Feel free to contact me __Tenicka Norwood__ at tenicka.norwood@gmail.com if you have more questions.
 
 # Repository Structure
 
