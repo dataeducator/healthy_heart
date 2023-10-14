@@ -3,7 +3,7 @@
 
 # Business Understanding
 #### __Problem Statement:__
-In the realm of diagnostics, timely and accurate disease detection is crucial to improving patient health outcomes. Zephyr Healthcare recognizes the potential of machine learning techniques in achieving this goal. The challenge lies in developing a robust predictive model that harnesses the power of machine learning algorithms, including random forests, to predict heart disease, focusing on achieving high recall rates.
+In diagnostics, timely and accurate disease detection is crucial to improving patient health outcomes. Zephyr Healthcare recognizes the potential of machine learning techniques in achieving this goal. The challenge lies in developing a robust predictive model that harnesses the power of machine learning algorithms, including random forests, to predict heart disease, focusing on achieving high recall rates.
 
 #### __Stakeholder:__
 Zephyr Healthcare Solutions
@@ -146,7 +146,7 @@ Feel free to contact me __Tenicka Norwood__ at tenicka.norwood@gmail.com if you 
       ├── notebook.ipynb                                       Documentation of Full Analysis in Jupyter Notebook
       ├── presentation.pdf                                     PDF version of Full Analysis shown in a slide deck                                   
       ├── setup.yaml                                           Includes instructions to obtain the dataset
-      ├── requirements.txt                                     Includes requirements to deploy the Streamlit app
+      ├── requirements/                                        Includes requirements to deploy the Streamlit app and instructions to obtain dataset
       ├── X_train_scaled.sav                                   Includes a model of scaled X_train for web app deployment
       ├── random_forest_model.sav                              Includes a model of random forest for web app deployment
       ├── healthy_heart.py                                     Includes Python code for the Streamlit web app
