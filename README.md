@@ -145,10 +145,8 @@ Feel free to contact me __Tenicka Norwood__ at tenicka.norwood@gmail.com if you 
       ├── README.md                                            Overview for project reviewers  
       ├── notebook.ipynb                                       Documentation of Full Analysis in Jupyter Notebook
       ├── presentation.pdf                                     PDF version of Full Analysis shown in a slide deck                                   
-      ├── setup.yaml                                           Includes instructions to obtain the dataset
       ├── requirements/                                        Includes requirements to deploy the Streamlit app and instructions to obtain dataset
-      ├── X_train_scaled.sav                                   Includes a model of scaled X_train for web app deployment
-      ├── random_forest_model.sav                              Includes a model of random forest for web app deployment
-      ├── healthy_heart.py                                     Includes Python code for the Streamlit web app
-      ├── banner.png                                           Banner image for deployed healthy_heart app
+      ├── models/                                              Includes models of scaled X_train and random forest for web app deployment
+      ├── images/                                              Includes a folder of images for the project
+      ├── scripts/                                             Includes Python code for the Streamlit web app
       └── .gitignore                                           Specifies intentionally untracked files
