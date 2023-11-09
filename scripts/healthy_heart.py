@@ -31,7 +31,9 @@ import pandas as pd
 #from tensorflow.keras.metrics import BinaryAccuracy, Recall
 #from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
 #import tensorflow as tf
-import pickle
+# import pickle
+import joblib
+import os
 import streamlit as st
 #from sklearn.metrics import classification_report, accuracy_score, recall_score, precision_score, f1_score
 #from keras.models import Sequential
@@ -55,24 +57,50 @@ warnings.simplefilter(action ='ignore', category = DeprecationWarning)
 warnings.simplefilter(action ='ignore', category = FutureWarning)
 warnings.filterwarnings("ignore", category=UserWarning, module="pandas")
 
+# Specify models folder path
+model_folder_path = 'models'
 
-# Load the  random_forest_model
-with open('random_forest_model.sav', 'rb') as model_file_1:
-    most_stable_model = pickle.load(model_file_1)
+# # Load the  random_forest_model
+# model_path = os.path.join(model_folder_path, 'random_forest_model.sav')
+# with open(model_path, 'rb') as model_file_1:
+#     most_stable_model = pickle.load(model_file_1)
+
+# # Load the model
+# with open('models\X_train_scaled.sav', 'rb') as model_file_1:
+#     X_train_scaled_model = pickle.load(model_file_1)
+#
+# # Set page configuration with wide layout and dark theme
+# st.set_page_config(
+#     page_title="Healthy Heart: A Heart Disease Predictor",
+#     layout="wide",
+#     initial_sidebar_state="collapsed",
+#  )
+#
+# # Specify image folder model_path
+# image_folder_path = 'images'
+# # Adding Image to web app
+# st.image(f'{image_folder_path}.banner.png', use_column_width=True, width=800)
+# Load the random_forest_model
+model_path = os.path.join(model_folder_path, 'random_forest_model.joblib')
+most_stable_model = joblib.load(model_path)
 
 # Load the model
-with open('X_train_scaled.sav', 'rb') as model_file_1:
-    X_train_scaled_model = pickle.load(model_file_1)
-   
+scaled_model_path = os.path.join(model_folder_path, 'X_train_scaled.joblib')
+X_train_scaled_model = joblib.load(scaled_model_path)
+
 # Set page configuration with wide layout and dark theme
 st.set_page_config(
     page_title="Healthy Heart: A Heart Disease Predictor",
     layout="wide",
     initial_sidebar_state="collapsed",
- )
+)
+
+# Specify image folder path
+image_folder_path = 'images'
 
 # Adding Image to web app
-st.image('banner.png', use_column_width=True, width=800)
+st.image(f'{image_folder_path}/banner.png', use_column_width=True, width=800)
+
 
 # Create input fields for user input
 col1, col2, col3 = st.columns(3)
@@ -126,7 +154,7 @@ if st.button("Predict"):
     # Preprocess the input data
     X_input_encoded = pd.get_dummies(input_df)
     X_input_scaled = X_train_scaled_model
-    
+
     print(X_input_encoded)
 
     # Make prediction
