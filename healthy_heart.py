@@ -24,7 +24,7 @@ def load_model(file_path):
     with open(file_path, 'rb') as model_file:
         return pickle.load(model_file)
 
-most_stable_model = load_model(os.path.join(model_folder_path, 'random_forest_model.sav'))
+most_stable_model = load_model(os.path.join(model_folder_path, 'most_stable_model.sav'))
 X_train_scaled_model = load_model(os.path.join(model_folder_path, 'X_train_scaled.sav'))
 
 # Set page configuration with wide layout and dark theme
@@ -61,11 +61,11 @@ with col3:
     fasting_bs = st.radio("Fasting Blood Sugar > 120 mg/dl", ("Yes", "No"))
 
 # Define additional input fields
-age = create_input_field("Age", 1, 110, 30, key="age_slider")
+#age = create_input_field("Age", 1, 110, 30, key="age_slider")
 sex = st.radio("Sex", ['Male', 'Female'], horizontal=True)
-chest_pain_type = st.selectbox("Chest Pain Type", ['ASY', 'ATA', 'NAP', 'TA'], key="chest_pain_type")
+#chest_pain_type = st.selectbox("Chest Pain Type", ['ASY', 'ATA', 'NAP', 'TA'], key="chest_pain_type")
 resting_bp = create_input_field("Resting Blood Pressure (mm Hg)", 80, 200, 120, key="resting_bp")
-cholesterol = create_input_field("Cholesterol (mg/dL)", 100, 400, 200, key="cholesterol")
+#cholesterol = create_input_field("Cholesterol (mg/dL)", 100, 400, 200, key="cholesterol")
 fasting_bs = st.radio("Fasting Blood Sugar > 120 mg/dl", ("Yes", "No"), horizontal=True, key="fasting_bs")
 fasting_bs = 1 if fasting_bs == "Yes" else 0  # Convert to 1 or 0
 resting_ecg = st.radio("Resting ECG", ["LVH", "Normal", "ST"], horizontal=True)
@@ -103,9 +103,12 @@ if st.button("Predict"):
 
     # Make prediction
     prediction = most_stable_model.predict(X_input_scaled)
-
-    # Display the result
-    st.write(f"The person has {prediction[0].lower()}")
+    print(prediction[0])
+    # # Display the result
+    # st.write(f"The person has {prediction[0].lower()}")
+    # Convert the prediction to a string and display the result
+    prediction_text = "not likely" if prediction[0] == 0 else "has a strong likelihood"
+    st.write(f"The person is {prediction_text} to have heart disease.")
 # # -*- coding: utf-8 -*-
 # """
 # Created on Wed Sep 20 21:57:26 2023
