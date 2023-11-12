@@ -58,18 +58,17 @@ with col2:
 
 with col3:
     cholesterol = create_input_field("Cholesterol (mg/dL)", 100, 400, 200)
-    fasting_bs = st.radio("Fasting Blood Sugar > 120 mg/dl", ("Yes", "No"))
-
+    #fasting_bs = st.radio("Fasting Blood Sugar > 120 mg/dl", ("Yes", "No"))
+    max_hr = create_input_field("Max Heart Rate", 0, 300, 150)
 # Define additional input fields
 #age = create_input_field("Age", 1, 110, 30, key="age_slider")
-sex = st.radio("Sex", ['Male', 'Female'], horizontal=True)
+#sex = st.radio("Sex", ['Male', 'Female'], horizontal=True)
 #chest_pain_type = st.selectbox("Chest Pain Type", ['ASY', 'ATA', 'NAP', 'TA'], key="chest_pain_type")
-resting_bp = create_input_field("Resting Blood Pressure (mm Hg)", 80, 200, 120, key="resting_bp")
+#resting_bp = create_input_field("Resting Blood Pressure (mm Hg)", 80, 200, 120, key="resting_bp")
 #cholesterol = create_input_field("Cholesterol (mg/dL)", 100, 400, 200, key="cholesterol")
 fasting_bs = st.radio("Fasting Blood Sugar > 120 mg/dl", ("Yes", "No"), horizontal=True, key="fasting_bs")
 fasting_bs = 1 if fasting_bs == "Yes" else 0  # Convert to 1 or 0
 resting_ecg = st.radio("Resting ECG", ["LVH", "Normal", "ST"], horizontal=True)
-max_hr = create_input_field("Max Heart Rate", 0, 300, 150)
 exercise_angina = st.radio("Exercise Angina", ["Yes", "No"], horizontal=True)
 exercise_angina = 1 if exercise_angina == "Yes" else 0
 ldpeak = create_input_field("Oldpeak", -4, 10, 0,  step=1)
