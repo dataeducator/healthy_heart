@@ -9,6 +9,7 @@ import pickle
 import os
 import streamlit as st
 import warnings
+import sklearn
 
 warnings.filterwarnings("ignore")
 warnings.simplefilter(action='ignore', category=DeprecationWarning)
