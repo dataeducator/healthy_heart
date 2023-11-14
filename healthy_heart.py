@@ -41,6 +41,8 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="collapsed",
 )
+# Adding Image to web app
+st.image('images/banner.png', use_column_width=True, width=800)
 
 # Create input fields for user input
 col1, col2, col3 = st.columns(3)
