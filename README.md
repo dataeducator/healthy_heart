@@ -6,7 +6,7 @@
 In diagnostics, timely and accurate disease detection is crucial to improving patient health outcomes. Zephyr Healthcare recognizes the potential of machine learning techniques in achieving this goal. The challenge lies in developing a robust predictive model that harnesses the power of machine learning algorithms, including random forests, to predict heart disease, focusing on achieving high recall rates.
 
 #### __Stakeholder:__
-Zephyr Healthcare Solutions
+Zephyr Healthcare
 
 #### __Business Case:__  
 As a newly appointed head of the data analytics team at Zephyr Healthcare Solutions, my team has been tasked with enhancing the company's diagnostic capabilities through advanced predictive modeling techniques for Heart Disease.
